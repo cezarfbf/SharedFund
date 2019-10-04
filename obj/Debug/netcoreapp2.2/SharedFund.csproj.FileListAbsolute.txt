@@ -1,0 +1,14 @@
+C:\Users\cezar.filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.deps.json
+C:\Users\cezar.filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.runtimeconfig.json
+C:\Users\cezar.filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.runtimeconfig.dev.json
+C:\Users\cezar.filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.dll
+C:\Users\cezar.filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.pdb
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.csprojAssemblyReference.cache
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.csproj.CoreCompileInputs.cache
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorAssemblyInfo.cache
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorAssemblyInfo.cs
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.AssemblyInfoInputs.cache
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.AssemblyInfo.cs
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorTargetAssemblyInfo.cache
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.dll
+C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.pdb
