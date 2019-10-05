@@ -12,10 +12,12 @@ namespace SharedFund.Persistence
 
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<FundAccount> FundAccounts { get; set; }
+        public virtual DbSet<WithdrawalsRules> WithdrawalsRules { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.InitData();
         }
+
     }
 }

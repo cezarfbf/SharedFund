@@ -4,7 +4,7 @@ namespace SharedFund.Persistence.Repositories
 {
     public interface IEmployeeRepository : IRepository<Employee>
     {
-        void WithdrawMony(int employeeId);
+        Withdraw WithdrawMoney(int employeeId);
          
     }
 }

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SharedFund.Persistence;
 
 namespace SharedFund.Migrations
 {
     [DbContext(typeof(SharedFundContext))]
-    partial class SharedFundContextModelSnapshot : ModelSnapshot
+    [Migration("20191005022346_SeedEmpl2")]
+    partial class SeedEmpl2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,83 +86,6 @@ namespace SharedFund.Migrations
                             EmployeeId = 101,
                             Entry = 104.0,
                             EntryDate = new DateTime(2019, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
-                });
-
-            modelBuilder.Entity("SharedFund.Models.WithdrawalsRules", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<double>("BalanceFrom");
-
-                    b.Property<double>("BalanceTo");
-
-                    b.Property<double>("FixedMoney");
-
-                    b.Property<int>("PercentageLimit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("WithdrawalsRules");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 100,
-                            BalanceFrom = 0.0,
-                            BalanceTo = 500.0,
-                            FixedMoney = 0.0,
-                            PercentageLimit = 50
-                        },
-                        new
-                        {
-                            Id = 101,
-                            BalanceFrom = 500.00999999999999,
-                            BalanceTo = 1000.0,
-                            FixedMoney = 50.0,
-                            PercentageLimit = 40
-                        },
-                        new
-                        {
-                            Id = 102,
-                            BalanceFrom = 1000.01,
-                            BalanceTo = 5000.0,
-                            FixedMoney = 150.0,
-                            PercentageLimit = 30
-                        },
-                        new
-                        {
-                            Id = 103,
-                            BalanceFrom = 5000.0100000000002,
-                            BalanceTo = 10000.0,
-                            FixedMoney = 650.0,
-                            PercentageLimit = 20
-                        },
-                        new
-                        {
-                            Id = 104,
-                            BalanceFrom = 10000.01,
-                            BalanceTo = 15000.0,
-                            FixedMoney = 1150.0,
-                            PercentageLimit = 15
-                        },
-                        new
-                        {
-                            Id = 105,
-                            BalanceFrom = 15000.01,
-                            BalanceTo = 20000.0,
-                            FixedMoney = 1900.0,
-                            PercentageLimit = 10
-                        },
-                        new
-                        {
-                            Id = 106,
-                            BalanceFrom = 20000.009999999998,
-                            BalanceTo = -1.0,
-                            FixedMoney = 2900.0,
-                            PercentageLimit = 5
                         });
                 });
 

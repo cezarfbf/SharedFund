@@ -13,6 +13,8 @@ using Microsoft.Extensions.Options;
 using SharedFund.Persistence;
 using Microsoft.EntityFrameworkCore;
 using SharedFund.Persistence.Repositories;
+using SharedFund.Business;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace SharedFund
 {
@@ -32,8 +34,16 @@ namespace SharedFund
 
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IFundAccountRepository, FundAccountRepository>();
+            services.AddScoped<IWithdrawRulesRepository, WithdrawRulesRepository>();
+
+            services.AddScoped<IEmployeeBusiness, EmployeeBusiness>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +61,17 @@ namespace SharedFund
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
+            
         }
     }
 }

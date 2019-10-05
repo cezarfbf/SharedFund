@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,24 +49,35 @@ namespace SharedFund.Persistence.Repositories
             return Context.Set<TEntity>().SingleOrDefault(predicate);
         }
 
-        public void Add(TEntity entity)
+        public TEntity Add(TEntity entity)
         {
-            Context.Set<TEntity>().Add(entity);
+            var created = Context.Set<TEntity>().Add(entity);
+            Context.SaveChanges();
+            return created.Entity;
+        }
+
+        public void Update(TEntity entity)
+        {
+            Context.Entry(entity).State = EntityState.Modified;
+            Context.SaveChanges();
         }
 
         public void AddRange(IEnumerable<TEntity> entities)
         {
             Context.Set<TEntity>().AddRange(entities);
+            Context.SaveChanges();
         }
 
         public void Remove(TEntity entity)
         {
             Context.Set<TEntity>().Remove(entity);
+            Context.SaveChanges();
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
             Context.Set<TEntity>().RemoveRange(entities);
+            Context.SaveChanges();
         }
     }
 }
