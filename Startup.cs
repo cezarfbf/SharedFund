@@ -34,9 +34,12 @@ namespace SharedFund
 
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IFundAccountRepository, FundAccountRepository>();
-            services.AddScoped<IWithdrawRulesRepository, WithdrawRulesRepository>();
+            services.AddScoped<IWithdrawRuleRepository, WithdrawRuleRepository>();
 
             services.AddScoped<IEmployeeBusiness, EmployeeBusiness>();
+            services.AddScoped<IFundAccountBusiness, FundAccountBusiness>();
+            services.AddScoped<IWithdrawRuleBusiness, WithdrawRuleBusiness>();
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

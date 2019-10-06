@@ -1,6 +1,6 @@
 namespace SharedFund.Models
 {
-    public class WithdrawalsRules
+    public class WithdrawaRule
     {
         public int Id { get; set; }
         public double BalanceFrom { get; set; }

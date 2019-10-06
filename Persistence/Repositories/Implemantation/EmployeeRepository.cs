@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SharedFund.Persistence.Repositories
 {
-    public class FundAccountRepository : Repository<FundAccount>, IFundAccountRepository
+    public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
     {
-        public FundAccountRepository(SharedFundContext context): base(context)
-        {
 
+        public EmployeeRepository(SharedFundContext context) : base(context)
+        {
         }
-        
+
         public SharedFundContext SharedFundContext { get { return Context as SharedFundContext; } }
     }
 }

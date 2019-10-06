@@ -10,8 +10,8 @@ using SharedFund.Persistence;
 namespace SharedFund.Migrations
 {
     [DbContext(typeof(SharedFundContext))]
-    [Migration("20191005040231_SeedEmpl3")]
-    partial class SeedEmpl3
+    [Migration("20191005221550_InitSeedTables")]
+    partial class InitSeedTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,16 +41,30 @@ namespace SharedFund.Migrations
                         new
                         {
                             Id = 100,
-                            BirthDate = new DateTime(2019, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BirthDate = new DateTime(2019, 10, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "Mark Zaruch",
-                            Salary = 200000.0
+                            Salary = 200000.32000000001
                         },
                         new
                         {
                             Id = 101,
-                            BirthDate = new DateTime(2019, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BirthDate = new DateTime(2019, 10, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "John Slavikov",
-                            Salary = 1300.0
+                            Salary = 1350.2
+                        },
+                        new
+                        {
+                            Id = 102,
+                            BirthDate = new DateTime(2019, 10, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Eduardo Cerqueira",
+                            Salary = 58483.980000000003
+                        },
+                        new
+                        {
+                            Id = 103,
+                            BirthDate = new DateTime(2019, 10, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Andre Ariano",
+                            Salary = 52483.580000000002
                         });
                 });
 
@@ -78,18 +92,88 @@ namespace SharedFund.Migrations
                             Id = 100,
                             EmployeeId = 100,
                             Entry = 16000.0,
-                            EntryDate = new DateTime(2019, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            EntryDate = new DateTime(2019, 9, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 101,
-                            EmployeeId = 101,
-                            Entry = 104.0,
+                            EmployeeId = 100,
+                            Entry = 16000.0,
                             EntryDate = new DateTime(2019, 10, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 102,
+                            EmployeeId = 101,
+                            Entry = 108.01000000000001,
+                            EntryDate = new DateTime(2019, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 103,
+                            EmployeeId = 101,
+                            Entry = 108.01000000000001,
+                            EntryDate = new DateTime(2019, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 104,
+                            EmployeeId = 101,
+                            Entry = 108.01000000000001,
+                            EntryDate = new DateTime(2019, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 105,
+                            EmployeeId = 102,
+                            Entry = 4678.7200000000003,
+                            EntryDate = new DateTime(2019, 1, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 106,
+                            EmployeeId = 102,
+                            Entry = 4678.7200000000003,
+                            EntryDate = new DateTime(2019, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 107,
+                            EmployeeId = 102,
+                            Entry = 4678.7200000000003,
+                            EntryDate = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 108,
+                            EmployeeId = 103,
+                            Entry = 4198.6800000000003,
+                            EntryDate = new DateTime(2019, 5, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 109,
+                            EmployeeId = 103,
+                            Entry = 4198.6800000000003,
+                            EntryDate = new DateTime(2019, 6, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 110,
+                            EmployeeId = 103,
+                            Entry = 4198.6800000000003,
+                            EntryDate = new DateTime(2019, 7, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 111,
+                            EmployeeId = 103,
+                            Entry = -3549.75,
+                            EntryDate = new DateTime(2019, 8, 4, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
-            modelBuilder.Entity("SharedFund.Models.WithdrawalsRules", b =>
+            modelBuilder.Entity("SharedFund.Models.WithdrawaRule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

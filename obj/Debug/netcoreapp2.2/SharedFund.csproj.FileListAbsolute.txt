@@ -12,17 +12,17 @@ C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.
 C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorTargetAssemblyInfo.cache
 C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.dll
 C:\Users\cezar.filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.pdb
-C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.deps.json
-C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.runtimeconfig.json
-C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.runtimeconfig.dev.json
-C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.dll
-C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.pdb
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.csprojAssemblyReference.cache
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.csproj.CoreCompileInputs.cache
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorAssemblyInfo.cache
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorAssemblyInfo.cs
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.AssemblyInfoInputs.cache
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.AssemblyInfo.cs
+C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.deps.json
+C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.runtimeconfig.json
+C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.runtimeconfig.dev.json
+C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.dll
+C:\Users\Cezar Filho\source\repos\SharedFund\bin\Debug\netcoreapp2.2\SharedFund.pdb
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.RazorTargetAssemblyInfo.cache
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.dll
 C:\Users\Cezar Filho\source\repos\SharedFund\obj\Debug\netcoreapp2.2\SharedFund.pdb
