@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedFund", "SharedFund\SharedFund.csproj", "{BB0CAB49-88C8-4ACB-93F6-6972E4A30B7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedFundTest", "SharedFundTest\SharedFundTest.csproj", "{33D557F5-8CDF-4A67-9C49-D42ED6DE0C71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB0CAB49-88C8-4ACB-93F6-6972E4A30B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0CAB49-88C8-4ACB-93F6-6972E4A30B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0CAB49-88C8-4ACB-93F6-6972E4A30B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0CAB49-88C8-4ACB-93F6-6972E4A30B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33D557F5-8CDF-4A67-9C49-D42ED6DE0C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33D557F5-8CDF-4A67-9C49-D42ED6DE0C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33D557F5-8CDF-4A67-9C49-D42ED6DE0C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33D557F5-8CDF-4A67-9C49-D42ED6DE0C71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DE2FD28-0815-4E77-B7D5-61157DE6026A}
+	EndGlobalSection
+EndGlobal
