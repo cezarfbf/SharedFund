@@ -11,10 +11,10 @@ namespace SharedFund.Models
         public static void InitData(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().HasData(
-                    new Employee { Id = 100, Name = "Mark Zaruch", Salary = 200000.32, BirthDate = new DateTime(2019, 10, 5) },
-                    new Employee {Id = 101, Name = "John Slavikov", Salary = 1350.20, BirthDate = new DateTime(2019, 10, 5) },
-                    new Employee { Id = 102, Name = "Eduardo Cerqueira", Salary = 58483.98, BirthDate = new DateTime(2019, 10, 5) },
-                    new Employee { Id = 103, Name = "Andre Ariano", Salary = 57483.58, BirthDate = new DateTime(2019, 10, 5) }
+                    new Employee { Id = 100, Name = "Mark Zaruch", Salary = 200000.32, BirthDate = new DateTime(2019, 10, 7) },
+                    new Employee {Id = 101, Name = "John Slavikov", Salary = 1350.20, BirthDate = new DateTime(2019, 10, 8) },
+                    new Employee { Id = 102, Name = "Eduardo Cerqueira", Salary = 58483.98, BirthDate = new DateTime(2019, 10, 9) },
+                    new Employee { Id = 103, Name = "Andre Ariano", Salary = 57483.58, BirthDate = new DateTime(2019, 10, 10) }
                 );
             modelBuilder.Entity<FundAccount>().HasData(
                     new FundAccount { Id = 100, Entry = 16000, EmployeeId = 100, EntryDate = new DateTime(2019, 9, 4) },
